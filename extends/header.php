@@ -66,31 +66,23 @@ if (!$_SESSION['user_id']) {
                         Apps
                     </li>
                     <li class="<?= basename($_SERVER['PHP_SELF']) == 'home.php' ? 'active-page' : '' ?>">
-                        <a href="home.php"><i class="material-icons-two-tone">dashboard</i>Dashboard</a>
+                        <a href="../home/home.php"><i class="material-icons-two-tone">dashboard</i>Dashboard</a>
                     </li>
                     <li class="<?= basename($_SERVER['PHP_SELF']) == 'profile.php' ? 'active-page' : '' ?>">
-                        <a href="profile.php" class=""><i class="material-icons-two-tone">face</i>profile</a>
-                    </li>
-                    <li>
-                        <a href="mailbox.html"><i class="material-icons-two-tone">inbox</i>Mailbox<span class="badge rounded-pill badge-danger float-end">87</span></a>
-                    </li>
-                    <!-- <li class="sidebar-title">
-                        UI Elements
-                    </li>
-                    <li>
-                        <a href="#"><i class="material-icons-two-tone">color_lens</i>Styles<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+                        <a href="../profile/profile.php"><i class="material-icons-two-tone">face</i>profile<i class="material-icons has-sub-menu">keyboard_arrow_right</i></a>
+                        
                         <ul class="sub-menu">
                             <li>
-                                <a href="styles-typography.html">Typography</a>
+                            <a href="../profile/update_name.php" class="<?= basename($_SERVER['PHP_SELF']) == '../profile/update_name.php' ? 'active-page' : '' ?>">update name</a>
                             </li>
                             <li>
-                                <a href="styles-code.html">Code</a>
+                                <a href="../profile/update_password.php" class="<?= basename($_SERVER['PHP_SELF']) == '../profile/update_password.php' ? 'active-page' : '' ?>">Update password</a>
                             </li>
                             <li>
-                                <a href="styles-icons.html">Icons</a>
+                                <a href="../profile/update_image.php" class="<?= basename($_SERVER['PHP_SELF']) == '../profile/update_image.php' ? 'active-page' : '' ?>">Update Image</a>
                             </li>
                         </ul>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>
